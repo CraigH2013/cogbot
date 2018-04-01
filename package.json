@@ -4,7 +4,8 @@
   "description": "An artificial intelligence for helping identify automatic negative thought patterns",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "postinstall": "node scripts/build-semantics"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/CraigH2013/cogbot/issues"
   },
-  "homepage": "https://github.com/CraigH2013/cogbot#readme"
+  "homepage": "https://github.com/CraigH2013/cogbot#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0"
+  },
+  "dependencies": {
+    "natural": "^0.5.6",
+    "string-combos": "^1.0.1"
+  }
 }
