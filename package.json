@@ -1,9 +1,11 @@
 {
   "name": "cogbot",
   "version": "1.0.0",
-  "description": "An artificial intelligence for helping identify automatic negative thought patterns",
+  "description":
+    "An artificial intelligence for helping identify automatic negative thought patterns",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "start": "node index",
     "postinstall": "node scripts/build-semantics"
   },
@@ -20,7 +22,8 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.10.0"
+    "eslint-plugin-import": "^2.10.0",
+    "jest": "^22.4.3"
   },
   "dependencies": {
     "natural": "^0.5.6",
